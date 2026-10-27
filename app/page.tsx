@@ -50,7 +50,7 @@ export default function Home() {
       }
     }
 
-    void loadItems()
+    loadItems()
     return () => {
       active = false
     }
@@ -233,8 +233,8 @@ export default function Home() {
             <ShoppingItemList
               items={visibleItems}
               saving={saving}
-              onToggle={(item) => void toggleItem(item)}
-              onRemove={(item) => void removeItem(item)}
+              onToggle={(item) => toggleItem(item)}
+              onRemove={(item) => removeItem(item)}
             />
           )}
         </div>
